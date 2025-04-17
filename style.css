@@ -1,127 +1,157 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f2f2f2;
-    color: #333;
-    text-align: center;
-  }
-  
-  header {
-    background: #333;
-    color: white;
-    padding: 20px 10px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f1f5f8;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 20px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.home {
+  padding-top: 60px;
+  background: #fff;
+  background-color: #f7f7f7;
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile:hover {
+  transform: scale(1.1);
+}
+
+.home h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+  font-style: italic;
+}
+.skills-section {
+  background-color: #f9f9f9;
+  padding-top: 40px;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.skill {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.skill h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill ul li {
+  padding: 5px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+#projects p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
   nav {
-    margin-top: 10px;
-  }
-  
-  nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .home {
-    padding-top: 60px;
-    background: #fff;
-  }
-  
-  .profile {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .home h2 {
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-  
-  .home p {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  .skills-section {
-    background-color: #f9f9f9;
-  }
-  
-  .skills-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 30px;
-  }
-  
-  .skill-category {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 200px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .skill-category h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .skill-category ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skill-category ul li {
-    padding: 5px 0;
-    color: #555;
-  }
-  
-  footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-  
-  @media (max-width: 600px) {
-    nav {
       display: flex;
       flex-direction: column;
       gap: 10px;
-    }
-  
-    .skills-grid {
+  }
+
+  .skills-grid {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .profile {
+  }
+
+  .profile {
       width: 100px;
       height: 100px;
-    }
   }
-  
+
+  section {
+      padding: 20px 10px;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+}
